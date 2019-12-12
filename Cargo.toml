@@ -1,0 +1,11 @@
+[package]
+name = "bpf_example_loader"
+version = "0.1.0"
+authors = ["Alessandro Decina <alessandro.d@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+redbpf = { version = "0.9.7", features = ["load"] }
+bpf_examples = { path = "../bpf_examples" }
+futures = "0.3"
+tokio = { version = "0.2.4", features = ["rt-core", "macros", "signal"] }
